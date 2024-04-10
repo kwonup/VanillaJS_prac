@@ -4,12 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Hello! From HTML</title>
+        <title>Momentum App</title>
     </head>
     <body>
-        <div class="hello">
-            <h1 class="sexy-font">Click me!</h1>
-        </div>
+        <form id="login-form">
+            <!-- input유효성검사 작동시키려면 form태그로 감싸줘야함 -->
+            <input required maxlength="15" type="text" placeholder="What is your name?" />
+            <button>Log In</button>
+        </form>
         <script src="app.js"></script>
     </body>
 </html>
