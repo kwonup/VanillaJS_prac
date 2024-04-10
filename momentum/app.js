@@ -12,9 +12,9 @@ function onLoginSubmit(event) {
 
     const username = loginInput.value;
     localStorage.setItem(USERNAME_KEY, username); //브라우저의 localStorage에 데이터 저장
+    //localStorage란 브라우저가 가지고있는 작은DB같은 API, 만약 없는 정보를 불러오려고하면 null값을 전달
     paintGreetings(username);
 }
-loginForm.addEventListener("submit", onLoginSubmit);
 
 function paintGreetings(username) {
     //h1 hidden속성제거하고 username삽입하는 함수
