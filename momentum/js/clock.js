@@ -11,6 +11,7 @@ const clock = document.querySelector("h2#clock");
 //setTimeout(sayHello, 5000);
 
 function getClock() {
+    //현재시간 표시 함수
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, "0");
     const minutes = String(date.getMinutes()).padStart(2, "0");
@@ -20,4 +21,4 @@ function getClock() {
 getClock(); //refresh하고도 바로 보여주기위해서 맨첨에 함수호출
 setInterval(getClock, 1000); //1초에 한번씩 함수호출
 
-//padStart(2, "0");
+//padStart(2, "0");는 길이는 2로 고정하고 만약 한자리문자열이라면 앞에 0을 추가하는 코드
